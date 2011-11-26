@@ -1,0 +1,112 @@
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+CREATE TABLE `#__groups` (
+  `group_id` int(32) unsigned NOT NULL auto_increment,
+  `group_name` varchar(128) NOT NULL,
+  `group_description` text NOT NULL,
+  PRIMARY KEY  (`group_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+INSERT INTO `#__groups` VALUES (1, 'admin', 'Gli utenti che appartengono a questo gruppo possono gestire il software in maniera completa.');
+
+CREATE TABLE `#__seeds` (
+  `seed_id` bigint(20) unsigned NOT NULL auto_increment,
+  `user_id` int(32) unsigned NOT NULL,
+  `seed_title` varchar(255) NOT NULL,
+  `seed_permalink` varchar(512) NOT NULL,
+  `seed_date` int(32) unsigned NOT NULL,
+  `seed_modified` int(32) unsigned NOT NULL,
+  `seed_status` varchar(255) NOT NULL,
+  `seed_comment_counter` int(11) NOT NULL default '0',
+  `seed_atom_id` varchar(200) NOT NULL,
+  `seed_brief` text NOT NULL,
+  `seed_facebook_id` varchar(512) NOT NULL,
+  `seed_twitter_id` varchar(512) NOT NULL,
+  `seed_classpath` varchar(255) NOT NULL default 'core.DBEntity',
+  PRIMARY KEY  (`seed_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
+
+CREATE TABLE `#__seeds_categories` (
+  `category_id` int(32) unsigned NOT NULL,
+  `seed_id` bigint(20) unsigned NOT NULL,
+  PRIMARY KEY  (`category_id`,`seed_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `#__seeds_comments` (
+  `comment_id` bigint(128) unsigned NOT NULL auto_increment,
+  `seed_id` bigint(20) unsigned NOT NULL,
+  `user_id` int(32) unsigned NOT NULL,
+  `comment_date` int(32) unsigned NOT NULL,
+  `comment_body` text NOT NULL,
+  PRIMARY KEY  (`comment_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE `#__seeds_tags` (
+  `seed_id` bigint(20) unsigned NOT NULL,
+  `tag_id` int(32) unsigned NOT NULL,
+  PRIMARY KEY  (`seed_id`,`tag_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `#__sessions` (
+  `session_id` varchar(255) NOT NULL,
+  `user_id` int(32) NOT NULL,
+  `session_start` int(11) unsigned NOT NULL,
+  `session_time` int(11) unsigned NOT NULL,
+  `session_browser` varchar(255) NOT NULL,
+  `session_ip` varchar(40) NOT NULL,
+  PRIMARY KEY  (`session_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+CREATE TABLE `#__tags` (
+  `tag_id` int(32) unsigned NOT NULL auto_increment,
+  `tag_name` varchar(128) NOT NULL,
+  `tag_img` varchar(512) NOT NULL,
+  `tag_thumb` varchar(512) NOT NULL,
+  `tag_date` time NOT NULL,
+  `user_id` varchar(32) NOT NULL,
+  PRIMARY KEY  (`tag_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE `#__users` (
+  `user_id` int(32) unsigned NOT NULL auto_increment,
+  `user_surname` varchar(512) character set utf8 NOT NULL,
+  `user_name` varchar(512) character set utf8 NOT NULL,
+  `user_username` varchar(255) character set utf8 NOT NULL,
+  `user_password` varchar(40) character set utf8 collate utf8_bin NOT NULL,
+  `user_email` varchar(255) character set utf8 NOT NULL,
+  `user_admin` tinyint(1) unsigned NOT NULL,
+  `user_avatar` varchar(512) NOT NULL,
+  PRIMARY KEY  (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+INSERT INTO `#__users` VALUES (1, 'Matteo', 'Vigoni', 'admin', 'a7ec1fbce15b4d4086c6943ef2dc1aa1', 'mattevigo@gmail.com', 1, '');
+
+CREATE TABLE `#__users_accounts` (
+  `account_id` int(32) unsigned NOT NULL auto_increment,
+  `user_id` int(32) unsigned NOT NULL,
+  `account_name` varchar(100) NOT NULL,
+  `acount_thumb` varchar(256) NOT NULL,
+  `account_img` varchar(256) NOT NULL,
+  `account_username` varchar(100) NOT NULL,
+  `account_password` varchar(100) NOT NULL,
+  `account_page` varchar(512) NOT NULL,
+  PRIMARY KEY  (`account_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+INSERT INTO `#__users_accounts` VALUES (1, 1, 'Tumblr', 'tumblr.png', '', '', '', 'http://www.tumblr.com');
+INSERT INTO `#__users_accounts` VALUES (2, 1, 'Twitter', 'twitter_32.png', '', '', '', 'http://twitter.com');
+INSERT INTO `#__users_accounts` VALUES (3, 1, 'Facebook', 'facebook_32.png', '', '', '', 'http://www.facebook.com');
+INSERT INTO `#__users_accounts` VALUES (4, 1, 'Vimeo', 'vimeo_32.png', '', '', '', 'http://vimeo.com');
+INSERT INTO `#__users_accounts` VALUES (5, 1, 'YouTube', 'youtube.png', '', '', '', 'http://www.youtube.com');
+INSERT INTO `#__users_accounts` VALUES (6, 1, 'Flickr', 'flickr_32.png', '', '', '', 'http://www.flickr.com');
+INSERT INTO `#__users_accounts` VALUES (7, 1, 'Last.Fm', 'lastfm_32.png', '', '', '', 'http://www.lastfm.com');
+INSERT INTO `#__users_accounts` VALUES (8, 1, 'MySpace', 'myspace_32.png', '', '', '', 'http://www.mysapce.com');
+
+CREATE TABLE `#__users_groups` (
+  `user_id` int(32) unsigned NOT NULL,
+  `group_id` int(32) unsigned NOT NULL,
+  PRIMARY KEY  (`user_id`,`group_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+INSERT INTO `#__users_groups` VALUES (1, 1);

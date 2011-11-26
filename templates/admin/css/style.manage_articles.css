@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+table.htmlstack
+{
+	width: 100%;
+	border-collapse:collapse;
+	margin-bottom: 15px;
+}
+
+tr.category
+{
+	width: 100%;
+	border-bottom:1px solid #B0BDCC;
+	text-align: left;
+	padding: 5px;
+	height: 40px;
+}
+
+tr.item
+{
+	border-bottom:1px solid #B0BDCC;
+}
+
+td.box
+{
+	width: 40px;
+}
+
+input.box
+{
+	width: 20px;
+}
+
+td.action
+{
+	text-align: right;
+	padding-right: 5px;
+	width: 45px;
+}
+
+td.status
+{
+	width: 100px;
+}
+
+div.article-info
+{
+	font-size: 13px;
+}
+
+div.status
+{
+	font-size: 10px;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+	padding-top: 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+
+div.public
+{
+	background-color: #66cc66;
+	border-width: 1px;
+	border-style:  solid;
+	border-color: #336633;
+}
+
+div.draft
+{
+	background-color: #FF6633;
+	border-width: 1px;
+	border-style:  solid;
+	border-color: #993300;
+}
+
+img.del
+{
+	width: 20px;
+	height: 20px;
+	border: none;
+}
+
+div#table-container
+{
+	border-top-width: 1px;
+	border-top-style:  solid;
+	border-top-color: #B0BDCC;
+}
+
+td.details
+{
+	padding-right: 3px;
+}
+
+img.onbutton {
+    float: left;
+    height: 30px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+    width: 30px;
+}
+
+
+#dialog
+{
+	
+}

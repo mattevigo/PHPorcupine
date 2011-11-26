@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+div.post
+{
+	/*
+border: 1px solid white;
+*/
+	/* height: 300px; */
+	text-align: justify;
+	line-height: 25px;
+	clear: left;
+}
+
+div.post-readmore
+{
+	margin-bottom: 10px;
+}
+
+a.post-readmore
+{
+	color: #669933;
+}
+
+a.post-readmore:visited
+{
+	color: #669933;
+}
+
+h1.post
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2.post
+{
+	margin-top: 10px;
+	font-size: large;
+	font-style: italic;
+}
+
+h3.post
+{
+	margin-bottom: 0px;	
+}
+
+p.post
+{
+	text-align: justify;
+	line-height: 25px;
+}
+
+.author
+{
+	float: right;
+}
+
+.details
+{
+	font-style: italic;
+	color: #669933
+}
+
+a
+{
+	color: #CCCCCC
+	text-decoration: underline;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: white;
+	
+}
+
+a:hover
+{
+	text-decoration: none;
+	
+}
+
+a:visited
+{
+	color: white;
+}

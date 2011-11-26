@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.album-cover
+{
+	border: 1px solid white;
+	height: 200px;
+	width: 200px;
+}
+
+.post-body
+{
+	
+}

@@ -1,0 +1,71 @@
+@CHARSET "UTF-8";
+
+div.full-container
+{
+	margin-top: 10px;
+}
+
+.header-choices
+{
+	margin: 3px;
+	padding: 2px;
+}
+
+span.header-choices
+{
+	float: right;
+	margin-top: 3px;
+}
+
+.addthis-box-large
+{
+	margin: 10px;
+	height: 30px;
+}
+
+.addthis_toolbox
+{
+	height: 35px;
+}
+
+label.share-form
+{
+	width: 100px;
+}
+
+textarea.share-text
+{
+	margin-left: 108px;
+	width: 305px;
+}
+
+#search-mail
+{
+	float:left;
+}
+
+#search-option
+{
+	float:right;
+	position: relative;
+	margin-right: 3px;
+	width: 300px;
+	margin-top: 5px;
+}
+
+.radio-small
+{
+	width: 18px;
+	margin-right: 10px;
+}
+
+label.share-option
+{
+	font-size: 12px;
+}
+
+button
+{
+	margin: 5px;
+	margin-left: 105px;
+}

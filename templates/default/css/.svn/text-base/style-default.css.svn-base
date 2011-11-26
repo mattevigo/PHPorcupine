@@ -1,0 +1,223 @@
+@CHARSET "UTF-8";
+
+body
+{
+	background-color: black;
+	margin: 0;
+}
+
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
+}
+
+.border-test
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+.border-test-bottom
+{
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+}
+
+
+#header-background
+{
+	height: 160px;
+	margin-top: 0px;
+
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 1px;
+	background-image: url('../images/crynewmusic/top.png');
+}
+
+#logo-container
+{
+	height: 221px;
+/*
+	border-style: dotted;
+	border-width: 1px;
+	border-color: white;
+*/
+	position: absolute;
+	top: 25px;
+	width: 100%;
+}
+
+#logo
+{
+	width: 925px; /* 924px */
+	background-image: url('../images/crynewmusic/logo.png');
+	height: 218px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container
+{
+	/*
+border-style: dotted;
+	border-width: 1px;
+	border-color: white;
+*/
+}
+
+#header-reference
+{
+	height: 30px;
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	filter:alpha(opacity=50); /* IE */
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: white;
+}
+
+#thumbs-container
+{
+	position: absolute;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+
+.thumb
+{
+	width: 24px;
+	height: 24px;
+	opacity: 0.7;
+	filter:alpha(opacity=70); /* IE */
+}
+
+.thumb:hover
+{
+	opacity: 1;
+	filter:alpha(opacity=100); /* IE */
+}
+
+#main
+{
+	/*
+background:none repeat scroll 0 0 #FF8431;
+*/
+	/*
+border-style: solid;
+	border-width: 1px;
+	border-color: #FFF3A1;
+*/
+	min-height: 370px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 846px;
+	/*height: 240px;*/
+	/*
+-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+*/
+	padding: 10px;
+}
+
+#main-container
+{
+	/*border-style: solid;
+	border-width: 1px;
+	border-color: red;*/
+	margin-top: 86px;
+}
+
+#footer-background
+{
+	height: 224px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: white;
+	margin-top: 25px;
+	background-image: url('../images/crynewmusic/bottom.png');
+}
+
+#logo-bottom
+{
+	position: relative;
+	bottom: 48px; 
+	width: 925px; /* 924px */
+	background-image: url('../images/crynewmusic/footer.png');
+	height: 224px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul, li {
+ margin: 0; padding: 0;
+}
+
+#blob {
+
+ border-right: 1px solid #0059ec;
+ border-left: 1px solid #0059ec;
+ position: absolute;
+ top: 0;
+ z-index : 1;
+ background: #0b2b61;
+ background: -moz-linear-gradient(top, #2b7902, #49cc04);
+ background: -webkit-gradient(linear, left top, left bottom, from(#2b7902), to(#49cc04));
+ -moz-border-radius: 4px;
+ -webkit-border-radius: 4px;
+ -moz-box-shadow: 2px 3px 10px #011331;
+ -webkit-box-shadow: 2px 3px 10px #011331;
+
+}
+
+#nav {
+ position: relative;
+ background: black;
+ float: left;
+}
+
+#nav li {
+ float: left;
+ list-style: none;
+ border-right: 1px solid #4a4a4a;
+ border-left: 1px solid black;
+}
+
+#nav li a {
+ color: #e3e3e3;
+ position: relative;
+ z-index: 2;
+ float: left;
+ font-size: 15px;
+ font-family: helvetica, arial, sans-serif;
+ text-decoration: none;
+ padding: 10px 10px;
+}
+
+#nav-container
+{
+	z-index: 1;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 190px;
+	width: 600px;
+	position: relative;
+	top: -70px;
+	
+	/*
+border-style: dotted;
+	border-width: 1px;
+	border-color: white;
+*/
+}

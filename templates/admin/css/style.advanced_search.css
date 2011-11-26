@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+
+#search-container
+{
+	width: 100%;
+	background: none;
+}
+
+label.search-form
+{
+	display: block;
+    width: 50px;
+    float: left;
+    margin: 8px 4px 6px 4px;
+	width: 60px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#search-text-option 
+{
+  font-size: 11px;
+}
+
+div.search-select
+{
+	margin: 5px;
+}
+
+#search-option-container
+{
+	padding-top: 5px;
+}
+
+#search-categories-select
+{
+	width: 357px;
+	float: left;
+}
+
+#search-newspapers-select
+{
+	width: 357px;
+	margin-left: 368px;
+}
+
+input.classic-check
+{
+	width: 20px;
+}
+
+.header-choices
+{
+	margin: 3px;
+	padding: 2px;
+}
+
+span.header-choices
+{
+	float: right;
+	margin-top: 3px;
+}
+
+div#search-date-range-container
+{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+input.date-range
+{
+	width: 120px;
+	margin-right: 3px;
+	margin-left: 10px;
+}
+
+table.date-range
+{
+	width: 100%
+}
+
+td.date-range
+{
+	text-align: center;
+}
+
+div.search-box
+{
+	margin: 5px;
+	padding: 5px;
+}
+
+input.search-type
+{
+	width: 30px;
+}
+
+button.search
+{
+	margin: 10px;
+}

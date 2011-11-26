@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+div.widget
+{
+	width: 214px;
+	min-height: 224px;
+	border: 1px solid white;
+	-moz-border-radius: 10px;
+	background-image: url('../images/crynewmusic/top.png');
+	margin-bottom: 20px;
+}
+
+h2.widget
+{
+	color: black;
+	text-align: center;
+	font-style: italic;
+	margin-top: 5px;
+	margin-bottom: 0px;;
+	color: #669933;
+	text-shadow: 1px 1px 1px black;
+}
+
+div.description
+{
+	-moz-border-radius: 5px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 190px;
+}
+
+p.description
+{
+	padding: 5px;
+	margin-top: 0px;
+	font-size: small;
+}
+
+.addthis_toolbox addthis_default_style
+{
+	height: 10px;
+}
+
+.frame
+{
+	width: 132px;
+	height: 132px;
+	background-color: black;
+	border: 1px solid white;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.album
+{
+	margin-left: 5px;
+	margin-top: 5px;
+	border: 1px solid white;
+}

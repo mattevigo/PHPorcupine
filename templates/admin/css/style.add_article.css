@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+.fieldset-left
+{
+	/*width: 45%;*/
+	/*float:left;*/
+	min-height: 56px;
+	display: inline;
+}
+.fieldset-right
+{
+	width: 45%;
+	display: inline;
+	min-height: 56px;
+	/*float: right;*/
+}
+
+input.small
+{
+	width: 100px;
+	text-align: center;	
+}
+
+input.tiny
+{
+	width: 50px;
+	text-align: center;	
+}
+
+button.side
+{
+	height: 24px;
+	margin-left: 10px;
+}
+
+.titles
+{
+	width: 640px;
+}
